@@ -17,12 +17,13 @@ Route::delete('/persona/{persona}', [ControllerDragon::class, 'delete'])->name('
 
 
 // Rutas para Parejas
+Route::get('/parejas', [ControllerHijos::class, 'index'])->name('parejas.index');
 Route::post('/parejas', [ControllerParejas::class, 'save'])->name('parejas.save');
 Route::put('/parejas/{pareja}', [ControllerParejas::class, 'update'])->name('parejas.update');
 Route::delete('/parejas/{pareja}', [ControllerParejas::class, 'delete'])->name('parejas.delete');
 
 // Rutas para Hijos
-Route::get('/hijos', [ControllerHijos::class, 'index'])->name('parejas.index');
+Route::get('/hijos', [ControllerHijos::class, 'index'])->name('hijos.index');
 Route::post('/hijos', [ControllerHijos::class, 'save'])->name('hijos.save');
 Route::put('/hijos/{hijo}', [ControllerHijos::class, 'update'])->name('hijos.update');
 Route::delete('/hijos/{hijo}', [ControllerHijos::class, 'delete'])->name('hijos.delete');
