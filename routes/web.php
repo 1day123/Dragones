@@ -17,7 +17,6 @@ Route::delete('/persona/{persona}', [ControllerDragon::class, 'delete'])->name('
 
 
 // Rutas para Parejas
-Route::get('/parejas', [ControllerParejas::class, 'index'])->name('parejas.index');
 Route::post('/parejas', [ControllerParejas::class, 'save'])->name('parejas.save');
 Route::put('/parejas/{pareja}', [ControllerParejas::class, 'update'])->name('parejas.update');
 Route::delete('/parejas/{pareja}', [ControllerParejas::class, 'delete'])->name('parejas.delete');
